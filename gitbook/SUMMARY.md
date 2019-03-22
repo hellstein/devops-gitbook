@@ -1,6 +1,6 @@
 # SUMMARY
 
-* [Introduction to XXX](README.md)
+* [Introduction to REPO](README.md)
 
 ### Quick Start 
 * [Prerequisite](qs/prerequisite.md)
