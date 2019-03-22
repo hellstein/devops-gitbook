@@ -1,11 +1,10 @@
-SRC = $(CURDIR)/gitbook-sample
-ARTIFACTS = gitbook.zip
+SRC = gitbook
 VERSION = test
+ARTS = $(SRC)-$(VERSION).zip
 
 build: $(SRC)
-	zip -r $(ARTIFACTS) $(SRC)
-	unzip -l $(ARTIFACTS)
-	mv $(ARTIFACTS) gitbook-$(VERSION).zip 
+	zip -r $(ARTS) $(SRC)
+	unzip -l $(ARTS)
 
-clean:
-	rm -rf *.zip 
+clean: $(ARTS)
+	rm -rf $(ARTS) 
